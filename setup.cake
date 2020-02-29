@@ -156,6 +156,12 @@ Task("FetchCoverityIssues")
 
    IRestResponse<CoverityIssues> issues = client.Get<CoverityIssues>(request);
 
+   if(issues.ErrorException != null)
+   {
+      Error(issues.ErrorException.Message);
+      throw issues.ErrorException;
+   }
+
    if(issues.Data == null)
    {
       Error(issues.Content);
