@@ -29,3 +29,7 @@ It will color the slack message attachment of security issues with shades of red
 ```powershell
 .\build.ps1 -CoverityViewId 1234 -CoverityProjectId CoolProjectName
 ```
+
+## Example Output
+
+![Example Output](/example.png?raw=true "Example Output")
