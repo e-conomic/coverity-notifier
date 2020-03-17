@@ -3,7 +3,7 @@
 The functionality of this script is to alert on new issues in a coverity view.
 But you are in charge off running this script after your normal coverity snapshot process.
 
-It will report all of the issues in the view you give it - so filter the view in coverity to your desire amount of issues.
+It will report all of the issues in the view you give it - so filter the view in coverity to your desired amount of issues.
 
 It will color the slack message attachment of security issues with shades of red.
 
