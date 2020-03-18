@@ -1,7 +1,7 @@
 # coverity-notifier
 
 The functionality of this script is to alert on new issues in a coverity view.
-But you are in charge off running this script after your normal coverity snapshot process.
+But you are in charge of running this script after your normal coverity snapshot process.
 
 It will report all of the issues in the view you give it - so filter the view in coverity to your desired amount of issues.
 
