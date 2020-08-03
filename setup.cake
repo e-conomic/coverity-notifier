@@ -39,7 +39,7 @@ Task("SendResultsToSlack")
    var typeDictionary = new Dictionary<string, IList<SlackChatMessageAttachmentField>>();
    var typeToCategoryDictionary = new Dictionary<string, string>();
 
-   var issues = buildParameters.CoverityIssues.viewContentsV1.rows.OrderBy(x => x.displayType);
+   var issues = buildParameters.CoverityIssues.viewContentsV1.rows.OrderBy(x => x.displayType).ThenBy(x => x.displayFile);
 
    foreach(var issue in issues)
    {
